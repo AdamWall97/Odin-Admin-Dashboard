@@ -73,24 +73,75 @@ background-color: cornflowerblue;
 }
 .headButton {
     color:white;
-    background-color: cornflowerblue;
+    background-color: lightsteelblue;
     border:none;
     border-radius: 12px;
+    font-size: 8px;
+    height:18px;
+    width:40px;
+}
+#ShareB {
+    grid-column-start: 37;
+    grid-row-start: 4;
+}
+#UploadB {
+    grid-column-start: 35;
+    grid-row-start: 4;
+   }
+#NewB {
+    grid-column-start: 33;
+    grid-row-start: 4;
 }
 
-    #ShareB {
-        grid-column: 36 / 40;
-        grid-row: 4/6;
-        }
+#Mainpage {
 
-    #UploadB {
-        grid-column: 31 / 35;
-        grid-row: 4/6;
-        }
+    display:grid;
+    grid-template-columns: repeat(40,1fr);
+    grid-template-rows: repeat(20,1fr);
+    background-color: lightgrey;
+}
 
-    #NewB {
-        grid-column: 26 / 30;
-        grid-row: 4/6;
-        }
+.yourProjects {
+    grid-column: 2 / 30;
+    grid-row: 2 / 21;
+    display:grid;
+    grid-template-columns: repeat(40,1fr);
+    grid-template-rows: repeat(20,1fr);
+}
 
+.Announcements {
+    grid-column: 30 / 41;
+    grid-row: 2 / 12;
+    display:grid;
+    grid-template-columns: repeat(40,1fr);
+    grid-template-rows: repeat(10,1fr);
+}
 
+.Trending {
+    grid-column: 30 / 41;
+    grid-row: 12 / 21;
+    display:grid;
+    grid-template-columns: repeat(40,1fr);
+    grid-template-rows: repeat(10,1fr);
+}
+
+.title {
+    font-family: sans-serif, Times, serif;
+    width: 150px;
+    font-size: 8px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+
+.mpcontainer {
+    background-color:white;   
+    height: 60px;
+    width: 150px;
+}
+
+#Trend {
+    grid-template-columns: 30;
+    grid-template-rows: 13;
+
+}
